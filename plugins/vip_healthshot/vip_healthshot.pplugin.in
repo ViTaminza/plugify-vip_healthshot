@@ -1,0 +1,28 @@
+{
+	"$schema": "https://raw.githubusercontent.com/untrustedmodders/plugify/refs/heads/main/schemas/plugin.schema.json",
+	"version": "${VIP_HEALTHSHOT_VERSION}",
+	"name": "vip_healthshot",
+	"description": "VIP healthshots: each round (honouring round_min from vip_healthshot.ini) every VIP with the 'healthshot' feature gets weapon_healthshot items up to the feature value, never below the amount they already carry. A port of the Metamod:Source module 'VIP_Healthshot' of the Pisex cs2-vip plugin.",
+	"author": "Pisex, ported to Plugify",
+	"website": "https://github.com/untrustedmodders/plugify",
+	"license": "GPL-3.0",
+	"entry": "bin/vip_healthshot",
+	"platforms": [],
+	"language": "cpp",
+	"dependencies": [
+		{
+			"name": "s2sdk",
+			"constraints": ">=2.18.2"
+		},
+		{
+			"name": "vip",
+			"constraints": ">=1.0.0"
+		},
+		{
+			"name": "hudmenu",
+			"constraints": ">=1.0.0",
+			"optional": true
+		}
+	],
+	"methods": []
+}
