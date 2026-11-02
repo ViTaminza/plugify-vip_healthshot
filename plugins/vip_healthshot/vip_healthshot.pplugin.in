@@ -2,7 +2,7 @@
 	"$schema": "https://raw.githubusercontent.com/untrustedmodders/plugify/refs/heads/main/schemas/plugin.schema.json",
 	"version": "${VIP_HEALTHSHOT_VERSION}",
 	"name": "vip_healthshot",
-	"description": "VIP healthshots: each round (honouring round_min from vip_healthshot.ini) every VIP with the 'healthshot' feature gets weapon_healthshot items up to the feature value, never below the amount they already carry. A port of the Metamod:Source module 'VIP_Healthshot' of the Pisex cs2-vip plugin.",
+	"description": "VIP healthshots: each round (honouring round_min from vip_healthshot.ini) every VIP with the 'healthshot' feature gets weapon_healthshot items up to the feature value, never below the amount they already carry. Pure s2sdk: the map gate, the client guards, the schema-offset cache and the KV1 config reader live in the plugin itself, no pisexcompat. A port of the Metamod:Source module 'VIP_Healthshot' of the Pisex cs2-vip plugin.",
 	"author": "Pisex, ported to Plugify",
 	"website": "https://github.com/untrustedmodders/plugify",
 	"license": "GPL-3.0",
@@ -17,11 +17,6 @@
 		{
 			"name": "vip",
 			"constraints": ">=1.0.0"
-		},
-		{
-			"name": "hudmenu",
-			"constraints": ">=1.0.0",
-			"optional": true
 		}
 	],
 	"methods": []
